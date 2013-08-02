@@ -34,22 +34,24 @@
   </style>
   <script src="jquery-1.10.2.min.js"></script>
   <script src="lib/Utils.js"></script>
-  <script src="lib/game/states/State.js"></script>
-  <script src="lib/game/states/StateMachine.js"></script>
-  <script src="lib/game/states/SimpleWander.js"></script>
-  <script src="lib/game/states/SimpleGlobal.js"></script>
-  <script src="lib/game/states/PathWander.js"></script>
-  <script src="lib/game/entities/BaseEntity.js"></script>
-  <script src="lib/game/entities/MovingEntity.js"></script>
-  <script src="lib/game/entities/Tree.js"></script>
-  <script src="lib/game/entities/Store.js"></script>
+  <script src="lib/GClass.js"></script>
+  <script src="lib/game/state/State.js"></script>
+  <script src="lib/game/state/StateMachine.js"></script>
+  <script src="lib/game/state/SimpleWander.js"></script>
+  <script src="lib/game/state/SimpleGlobal.js"></script>
+  <script src="lib/game/state/PathWander.js"></script>
+  <script src="lib/game/entity/BaseEntity.js"></script>
+  <script src="lib/game/entity/MovingEntity.js"></script>
+  <script src="lib/game/entity/Civilian.js"></script>
+  <script src="lib/game/entity/Tree.js"></script>
+  <script src="lib/game/entity/Store.js"></script>
   <script src="lib/game/Tile.js"></script>
   <script src="lib/game/World.js"></script>
-  <script src="lib/game/GameCanvas.js"></script>
+  <script src="lib/game/Canvas.js"></script>
   <script>
         /*global Game*/
         window.onload = function() {
-            var game = new Game.GameCanvas('c');
+            var game = new Game.Canvas('c');
             game.start();
         };
     </script>
